@@ -1,0 +1,10 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the  and  formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the landcruisers_init() hook (in hooks/landcruisers.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="landcruisers-manufacturer-<%%VALUE(landcruisers_id)%%>" class="landcruisers-manufacturer"><%%VALUE(manufacturer)%%></td>
+		<td id="landcruisers-date-<%%VALUE(landcruisers_id)%%>" class="landcruisers-date"><%%VALUE(date)%%></td>
+		<td id="landcruisers-landcruisers_id-<%%VALUE(landcruisers_id)%%>" class="landcruisers-landcruisers_id"><%%VALUE(landcruisers_id)%%></td>

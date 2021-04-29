@@ -1,0 +1,10 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the blasters_init() hook (in hooks/blasters.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="blasters-manufacturer-<%%VALUE(blaster_id)%%>" class="blasters-manufacturer"><%%SELECT%%><%%VALUE(manufacturer)%%><%%ENDSELECT%%></td>
+		<td id="blasters-date-<%%VALUE(blaster_id)%%>" class="blasters-date"><%%SELECT%%><%%VALUE(date)%%><%%ENDSELECT%%></td>
+		<td id="blasters-blaster_id-<%%VALUE(blaster_id)%%>" class="blasters-blaster_id"><%%SELECT%%><%%VALUE(blaster_id)%%><%%ENDSELECT%%></td>
